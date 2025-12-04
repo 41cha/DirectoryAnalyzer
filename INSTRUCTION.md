@@ -55,9 +55,9 @@ pip install directory-analyzer==0.1.0
 
 ## Example of usage
 
-from directory_analyzer import DirectoryAnalyzer
+1. from directory_analyzer import DirectoryAnalyzer
 
-path = r'C:\directory'
-analyzer = DirectoryAnalyzer(path)
-analyzer.analyze_directory()
-print(analyzer.generate_report())
+2. path = r'C:\directory'
+3. analyzer = DirectoryAnalyzer(path)
+4. analyzer.analyze_directory()
+5. print(analyzer.generate_report())
