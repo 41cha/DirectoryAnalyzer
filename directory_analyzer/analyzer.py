@@ -7,6 +7,7 @@ class DirectoryAnalyzer:
         self.path = path
         self.files_count = 0
         self.dirs_count = 0
+        
         self.ext_stats = Counter()
 
         self.file_sizes = []
