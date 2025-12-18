@@ -25,8 +25,10 @@ class DirectoryAnalyzer:
                 try:
                     size = os.path.getsize(file_path)
                     self.files_count += 1
+                    
                     ext = os.path.splitext(file)[1].lower()
                     self.ext_stats[ext] += size
+                    
                     self.file_sizes.append((file_path, size))
 
                     file_hash = self._get_file_hash(file_path)
@@ -39,6 +41,7 @@ class DirectoryAnalyzer:
         hasher = hashlib.md5()
 
         with open(file_path, 'rb') as f:
+            
             for chunk in iter(lambda: f.read(chunk_size), b''):
                 hasher.update(chunk)
 
