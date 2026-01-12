@@ -46,7 +46,7 @@ Directory Analyzer is a simple Python tool that scans a directory recursively an
   Returns groups of files that have identical content.
 
 - `generate_report()`  
-  Builds a formatted text report that can be printed or saved.
+  Builds a formatted text report that can be printed.
 
 ## Example report (simplified)
 
