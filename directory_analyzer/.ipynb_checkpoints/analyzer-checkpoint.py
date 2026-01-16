@@ -3,7 +3,6 @@ import hashlib
 from collections import Counter, defaultdict
 
 class DirectoryAnalyzer:
-
     def __init__(self, path):
         self.path = path
         self.files_count = 0
